@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>hw2</title>
+</head>
+<body>
+	<script>
+		var age = prompt('Сколько Вам лет?', '');
+			if (!Number(age)){
+					alert ('Неправда!');
+				}
+			if (!Number(age < 150)) {
+				alert ('Неправда');
+			}
+			else {
+				if (age % 10 === 1 && age % 100 !== 11) {
+					alert(age + " год"); }
+				else if (age % 10 === 2 || age % 10 === 3 || age % 10 === 4) { 
+				if (age % 100 === 12 ||  age % 100 === 13 || age % 100 === 14) { 
+					alert(age + " лет");
+				} else {
+					alert(age + " года");
+		       }
+				} else {
+					alert(age + " лет");
+				}
+		}
+	</script>
+</body>
+</html>
